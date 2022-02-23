@@ -2,9 +2,9 @@
 // Created by Plamen Yankov on 23.02.22.
 //
 
-#include "main.h"
 #include <iostream>
-#include <typeinfo>
+#define HUNDRED 100
+#define DEBUG
 
 auto a = 1;
 auto b = 12312321312321;
@@ -14,14 +14,9 @@ auto e = true;
 auto f = 'b';
 
 int main(){
-//    std::string name;
-//    std::cout << "Write your name" << std::endl;
-//    std::cin >> name;
-    std::cout << typeid(a).name() << std::endl;
-    std::cout << typeid(b).name() << std::endl;
-    std::cout << typeid(c).name() << std::endl;
-    std::cout << typeid(d).name() << std::endl;
-    std::cout << typeid(e).name() << std::endl;
-    std::cout << typeid(f).name() << std::endl;
+    c += d;
+#ifdef DEBUG
+    std::cout << c << std::endl;
+#endif
     return 0;
 }
