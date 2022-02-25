@@ -11,12 +11,12 @@ struct Car{
     unsigned char pur;
 };
 int main(){
-//    Car car1;
-//    car1.name = "dad";
-//    car1.age = 12;
-//    car1.pur = bad;
-//
-//    std::cout << car1.name << std::endl;
+    Car car1;
+    car1.name = "dad";
+    car1.age = 12;
+    car1.pur = bad;
+
+    std::cout << car1.name << std::endl;
     std::cout << bad << std::endl;
     return 0;
 }
