@@ -29,5 +29,31 @@ int main(){
 
     std::vector<int> v{1,3,5,7};
     std::cout << v.size() << std::endl;
+/*
+ * Switch
+ */
+int operand1;
+int operand2;
+char op_sign;
+
+std::cout << "Operand 1 " << std::endl;
+std::cin >> operand1;
+
+std::cout << "Operand 1 " << std::endl;
+std::cin >> operand2;
+
+std::cout << "Sign " << std::endl;
+std::cin >> op_sign;
+
+
+std::cout << operand1 << " " << operand2 << " " << op_sign << std::endl;
+
+    switch (op_sign) {
+        case '*':
+            std::cout << operand1 * operand2 << std::endl;
+            break;
+    }
+
+
     return 0;
 }
