@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:C++_Essential_Training/Ex_Files_C_Plus_Plus_EssT/Working/Working.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:C++_Essential_Training">
+   </FileRef>
+</Workspace>
