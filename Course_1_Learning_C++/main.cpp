@@ -1,59 +1,42 @@
-//
-// Created by Plamen Yankov on 23.02.22.
-//
+// Learning C++
+// Challenge 04_05
+// Calculate a GPA, by Eduardo Corpeño
 
 #include <iostream>
 #include <vector>
 #include "Student.h"
 
-enum car_purpose {ass, bad, girl};
 
-struct Car{
-    std::string name;
-    int age;
-    unsigned char pur;
-};
+
+std::vector<Student> students = {Student(1,"George P. Burdell"),
+                            Student(2,"Nancy Rhodes")};
+
+std::vector<Course> courses = {Course(1,"Algebra",5),
+                          Course(2,"Physics",4),
+                          Course(3,"English",3),
+                          Course(4,"Economics",4)};
+
+std::vector<Grade> grades = {Grade(1,1,'B'),	Grade(1,2,'A'),	Grade(1,3,'C'),
+                        Grade(2,1,'A'),	Grade(2,2,'A'), Grade(2,4,'B')};
+
+float GPA = 0.0f;
+int id;
+
 int main(){
-    // Car class
-    Car car1;
-    car1.name = "dad";
-    car1.age = 12;
-    car1.pur = bad;
+    std::cout << "Enter a student ID: ";
+    std::cin >> id;
 
-    std::cout << car1.name << std::endl;
-    std::cout << bad << std::endl;
-
-    // Student class
-//    Student student1(1, "Pancho");
-//    std::cout << student1.get_name() << std::endl;
-
-    std::vector<int> v{1,3,5,7};
-    std::cout << v.size() << std::endl;
-/*
- * Switch
- */
-int operand1;
-int operand2;
-char op_sign;
-
-std::cout << "Operand 1 " << std::endl;
-std::cin >> operand1;
-
-std::cout << "Operand 1 " << std::endl;
-std::cin >> operand2;
-
-std::cout << "Sign " << std::endl;
-std::cin >> op_sign;
+    // Calculate the GPA for the selected student.
+    // Write your code here
 
 
-std::cout << operand1 << " " << operand2 << " " << op_sign << std::endl;
+    std::string student_str;
+    student_str = students[0].get_name(); // Change this to the selected student's name
 
-    switch (op_sign) {
-        case '*':
-            std::cout << operand1 * operand2 << std::endl;
-            break;
-    }
-
-
-    return 0;
+    std::cout << "The GPA for " << student_str << " is " << GPA << std::endl;
+    return (0);
 }
+
+
+
+

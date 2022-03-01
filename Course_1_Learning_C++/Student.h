@@ -1,24 +1,40 @@
-//
-// Created by Plamen Yankov on 26.02.22.
-//
 #pragma once
-#ifndef C_LEARNING_PATH_LINKEDIN_STUDENT_H
-#define C_LEARNING_PATH_LINKEDIN_STUDENT_H
 
-#include <iostream>
+#include <string>
 
-class Student {
-public:
-    Student(int id, std::string name);
-    int get_id();
-    std::string get_name();
-    void set_id(int id);
-    void set_name(std::string name);
-
+class Student{
 private:
     int id;
     std::string name;
+
+public:
+    Student(int the_id, std::string the_name);
+    int get_id();
+    std::string get_name();
 };
 
+class Course{
+private:
+    int id;
+    std::string name;
+    unsigned char credits;
 
-#endif //C_LEARNING_PATH_LINKEDIN_STUDENT_H
+public:
+    Course(int the_id, std::string the_name, unsigned char the_credits);
+    int get_id();
+    std::string get_name();
+    int get_credits();
+};
+
+class Grade{
+private:
+    int student_id;
+    int course_id;
+    char grade;
+
+public:
+    Grade(int sid, int cid, char grd);
+    int get_student_id();
+    int get_course_id();
+    char get_grade();
+};
